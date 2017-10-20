@@ -1,13 +1,14 @@
 #!/bin/bash
 echo "---Now updating..."
 echo "---Build by hugo."
-hugo
+hugo >/dev/null
 
 echo "---git add & commit."
-git add . && git commit -m "updated on `(date +"%Y/%m/%d")`"
+git add . >/dev/null
+git commit -m "updated on `(date +"%Y/%m/%d")`" >/dev/null
 
 echo "---git push /public from /public to master."
-git subtree push --prefix public/ origin master
+git subtree push --prefix public/ origin master >/dev/null
 
 echo "Open your GitHub-pages? [Y/n]"
 read ANSWER
@@ -17,3 +18,4 @@ case $ANSWER in
     * ) echo "---Finish.";;
 esac
 
+echo "---Finish."
