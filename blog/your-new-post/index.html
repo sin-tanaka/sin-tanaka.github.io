@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="ja">
 
 <head>
 <meta charset="utf-8">
@@ -8,7 +8,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
-<meta name="author" content="Arthur Dent">
+<meta name="author" content="Shintaro TANAKA">
 <meta name="description" content="">
 
 <meta property="og:title" content="Your New Post" />
@@ -47,7 +47,7 @@
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/darcula.min.css">
 
 
 
@@ -57,11 +57,11 @@
 
 
     
-    <link rel="stylesheet" href="https://sin-tanaka.github.io/css/reset.css?t=2017-10-20%2011%3a42%3a57.394407364%20%2b0900%20JST%20m%3d%2b0.043495595">
-    <link rel="stylesheet" href="https://sin-tanaka.github.io/css/pygments.css?t=2017-10-20%2011%3a42%3a57.394407364%20%2b0900%20JST%20m%3d%2b0.043495595">
-    <link rel="stylesheet" href="https://sin-tanaka.github.io/css/main.css?t=2017-10-20%2011%3a42%3a57.394407364%20%2b0900%20JST%20m%3d%2b0.043495595">
+    <link rel="stylesheet" href="https://sin-tanaka.github.io/css/reset.css?t=2017-10-20%2016%3a08%3a31.322180359%20%2b0900%20JST%20m%3d%2b0.503053697">
+    <link rel="stylesheet" href="https://sin-tanaka.github.io/css/pygments.css?t=2017-10-20%2016%3a08%3a31.322180359%20%2b0900%20JST%20m%3d%2b0.503053697">
+    <link rel="stylesheet" href="https://sin-tanaka.github.io/css/main.css?t=2017-10-20%2016%3a08%3a31.322180359%20%2b0900%20JST%20m%3d%2b0.503053697">
     
-        <link rel="stylesheet" href="https://sin-tanaka.github.io/css/override.css?t=2017-10-20%2011%3a42%3a57.394407364%20%2b0900%20JST%20m%3d%2b0.043495595">
+        <link rel="stylesheet" href="https://sin-tanaka.github.io/css/override.css?t=2017-10-20%2016%3a08%3a31.322180359%20%2b0900%20JST%20m%3d%2b0.503053697">
     
 
 
@@ -115,16 +115,18 @@
                 
                 <a href="https://sin-tanaka.github.io/"><img class="avatar" src="https://sin-tanaka.github.io/img/profile.png" srcset="https://sin-tanaka.github.io/img/profile.png 1x"></a>
             
-            <a href="https://sin-tanaka.github.io/"><div class="name">Arthur Dent</div></a>
+            <a href="https://sin-tanaka.github.io/"><div class="name">Shintaro TANAKA</div></a>
             
             <nav>
                 <ul>
                     
                         <li class="nav-blog"><a href="https://sin-tanaka.github.io/blog/"><span>Blog</span></a></li>
                     
-                        <li class="nav-about"><a href="https://sin-tanaka.github.io/about/"><span>About</span></a></li>
+                        <li class="nav-about"><a href="https://sin-tanaka.github.io/fixed/about/"><span>About</span></a></li>
                     
                         <li class="nav-code"><a href="https://sin-tanaka.github.io/code/"><span>Code</span></a></li>
+                    
+                        <li class="nav-"><a href="https://sin-tanaka.github.io/fixed/about/"><span>About</span></a></li>
                     
                 </ul>
             </nav>
@@ -137,15 +139,13 @@
         <div class="content">
 
         
-            <a href="//github.com/you" target="_blank" rel="noopener"><img class="icon" src="https://sin-tanaka.github.io/img/github.svg" alt="github" /></a>
+            <a href="//github.com/sin-tanaka" target="_blank" rel="noopener"><img class="icon" src="https://sin-tanaka.github.io/img/github.svg" alt="github" /></a>
         
 
         
-            <a href="//twitter.com/you" target="_blank" rel="noopener"><img class="icon" src="https://sin-tanaka.github.io/img/twitter.svg" alt="twitter" /></a>
+            <a href="//twitter.com/glnagano" target="_blank" rel="noopener"><img class="icon" src="https://sin-tanaka.github.io/img/twitter.svg" alt="twitter" /></a>
         
 
-        
-            <a href="//example.com/@you" target="_blank" rel="noopener"><img class="icon" src="https://sin-tanaka.github.io/img/mastodon.svg" alt="mastodon" /></a>
         
 
         
@@ -161,7 +161,7 @@
         
 
         
-            <a href="mailto:you@example.space"><img class="icon" src="https://sin-tanaka.github.io/img/email.svg" alt="email" /></a>
+            <a href="mailto:genaxy__at__gmail.com"><img class="icon" src="https://sin-tanaka.github.io/img/email.svg" alt="email" /></a>
         
 
         
@@ -202,26 +202,7 @@
             </div>
             <br>
             <div class="disqus">
-                <div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "cocoaexamplesite" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                
             </div>
         </div>
     </div>
@@ -229,16 +210,13 @@
 
 
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-123-45', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
-
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/python.min.js"></script>
   
 
   <script type="text/javascript">

@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Arthur Dent</title>
+    <title>Blog on Shintaro TANAKA</title>
     <link>https://sin-tanaka.github.io/blog/</link>
-    <description>Recent content in Blog on Arthur Dent</description>
+    <description>Recent content in Blog on Shintaro TANAKA</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <lastBuildDate>Thu, 19 Oct 2017 18:30:48 +0900</lastBuildDate>
+    <language>ja</language>
+    <lastBuildDate>Fri, 20 Oct 2017 11:25:20 +0900</lastBuildDate>
     
 	<atom:link href="https://sin-tanaka.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2017 10 20 11 25</title>
+      <link>https://sin-tanaka.github.io/blog/2017-10-20-11-25/</link>
+      <pubDate>Fri, 20 Oct 2017 11:25:20 +0900</pubDate>
+      
+      <guid>https://sin-tanaka.github.io/blog/2017-10-20-11-25/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Your New Post</title>

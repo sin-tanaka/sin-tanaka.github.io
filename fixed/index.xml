@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fixed on Arthur Dent</title>
+    <title>Fixed on Shintaro TANAKA</title>
     <link>https://sin-tanaka.github.io/fixed/</link>
-    <description>Recent content in Fixed on Arthur Dent</description>
+    <description>Recent content in Fixed on Shintaro TANAKA</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>ja</language>
     <lastBuildDate>Thu, 19 Oct 2017 18:45:58 +0900</lastBuildDate>
     
 	<atom:link href="https://sin-tanaka.github.io/fixed/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,7 @@
       <pubDate>Thu, 19 Oct 2017 18:45:58 +0900</pubDate>
       
       <guid>https://sin-tanaka.github.io/fixed/about/</guid>
-      <description>I am Web Engineer in Nagano.</description>
+      <description>h1.ダミーテスト I am Web Engineer in Nagano. Japanese / English / C / Python / Django import this // ... code h2.テスト h3.テスト h4.テスト h5.テスト import this</description>
     </item>
     
   </channel>
