@@ -8,7 +8,7 @@ git add . >/dev/null
 git commit -m "updated on `(date +"%Y/%m/%d")`" >/dev/null
 
 echo "---git push /public from /public to master."
-git subtree push --prefix public/ origin master >/dev/null
+git subtree push --prefix public/ origin master &>/dev/null
 
 echo "Open your GitHub-pages? [Y/n]"
 read ANSWER
