@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sin-tanaka.github.io/blog/2017-10-20-11-25/</loc>
-    <lastmod>2017-10-20T11:25:20+09:00</lastmod>
+    <loc>https://sin-tanaka.github.io/blog/github.iogithub-pages%E3%81%A7master%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E3%83%9B%E3%82%B9%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/</loc>
+    <lastmod>2017-10-26T09:38:37+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sin-tanaka.github.io/fixed/about/</loc>
+    <loc>https://sin-tanaka.github.io/about/</loc>
     <lastmod>2017-10-19T18:45:58+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sin-tanaka.github.io/blog/your-new-post/</loc>
+    <loc>https://sin-tanaka.github.io/blog/first-post/</loc>
     <lastmod>2017-10-19T18:30:48+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://sin-tanaka.github.io/blog/</loc>
-    <lastmod>2017-10-20T11:25:20+09:00</lastmod>
+    <lastmod>2017-10-26T09:38:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -28,8 +28,14 @@
   </url>
   
   <url>
-    <loc>https://sin-tanaka.github.io/fixed/</loc>
-    <lastmod>2017-10-19T18:45:58+09:00</lastmod>
+    <loc>https://sin-tanaka.github.io/tags/github-pages/</loc>
+    <lastmod>2017-10-26T09:38:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sin-tanaka.github.io/tags/github.io/</loc>
+    <lastmod>2017-10-26T09:38:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -40,20 +46,32 @@
   </url>
   
   <url>
-    <loc>https://sin-tanaka.github.io/categories/hugo/</loc>
+    <loc>https://sin-tanaka.github.io/categories/hello/</loc>
     <lastmod>2017-10-19T18:30:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sin-tanaka.github.io/</loc>
-    <lastmod>2017-10-20T11:25:20+09:00</lastmod>
+    <loc>https://sin-tanaka.github.io/tags/hugo/</loc>
+    <lastmod>2017-10-26T09:38:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sin-tanaka.github.io/tags/</loc>
-    <lastmod>2017-10-19T18:30:48+09:00</lastmod>
+    <lastmod>2017-10-26T09:38:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sin-tanaka.github.io/categories/tech/</loc>
+    <lastmod>2017-10-26T09:38:37+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sin-tanaka.github.io/</loc>
+    <lastmod>2017-10-26T09:38:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   

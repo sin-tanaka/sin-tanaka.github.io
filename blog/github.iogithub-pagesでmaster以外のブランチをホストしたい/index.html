@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="本ブログの構成 本ブログは Golang 製の hugo という静的サイトジェネレータで生成しています。 生成した静的ファイルは github.io(github-pages) でホストしています。 問題点 github.io は github の提供">
+
+<meta property="og:title" content="github.io(github-pages)でmaster以外のブランチをホストしたい" />
+<meta property="og:description" content="本ブログの構成 本ブログは Golang 製の hugo という静的サイトジェネレータで生成しています。 生成した静的ファイルは github.io(github-pages) でホストしています。 問題点 github.io は github の提供" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sin-tanaka.github.io/blog/github.iogithub-pages%E3%81%A7master%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E3%83%9B%E3%82%B9%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/" />
+
+
+
+<meta property="article:published_time" content="2017-10-26T09:38:37&#43;09:00"/>
+
+<meta property="article:modified_time" content="2017-10-26T09:38:37&#43;09:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>
+
+
+     github.io(github-pages)でmaster以外のブランチをホストしたい 
+
+</title>
+<link rel="canonical" href="https://sin-tanaka.github.io/blog/github.iogithub-pages%E3%81%A7master%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E3%83%9B%E3%82%B9%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/darcula.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://sin-tanaka.github.io/css/reset.css?t=2017-10-30%2012%3a57%3a01.964581184%20%2b0900%20JST%20m%3d%2b0.434115868">
+    <link rel="stylesheet" href="https://sin-tanaka.github.io/css/pygments.css?t=2017-10-30%2012%3a57%3a01.964581184%20%2b0900%20JST%20m%3d%2b0.434115868">
+    <link rel="stylesheet" href="https://sin-tanaka.github.io/css/main.css?t=2017-10-30%2012%3a57%3a01.964581184%20%2b0900%20JST%20m%3d%2b0.434115868">
+    
+        <link rel="stylesheet" href="https://sin-tanaka.github.io/css/override.css?t=2017-10-30%2012%3a57%3a01.964581184%20%2b0900%20JST%20m%3d%2b0.434115868">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://sin-tanaka.github.io/img/leaf.ico"
+
+>
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                <a href="https://sin-tanaka.github.io/"><img class="avatar" src="https://sin-tanaka.github.io/img/profile_2.jpg" srcset="https://sin-tanaka.github.io/img/profile_2.jpg 1x"></a>
+            
+            <a href="https://sin-tanaka.github.io/"><div class="name"></div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-blog"><a href="https://sin-tanaka.github.io/blog/"><span>Blog</span></a></li>
+                    
+                        <li class="nav-about"><a href="https://sin-tanaka.github.io/about/"><span>About</span></a></li>
+                    
+                        <li class="nav-code"><a href="//github.com/sin-tanaka"><span>Code</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="//github.com/sin-tanaka" target="_blank" rel="noopener"><img class="icon" src="https://sin-tanaka.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+            <a href="//twitter.com/__sin_tanaka" target="_blank" rel="noopener"><img class="icon" src="https://sin-tanaka.github.io/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="//instagram.com/kageyama_tanaka" target="_blank" rel="noopener"><img class="icon" src="https://sin-tanaka.github.io/img/instagram.svg" alt="instagram" /></a>
+        
+
+        
+
+        
+            <a href="mailto:genaxy__at__gmail.com"><img class="icon" src="https://sin-tanaka.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+            <a href="https://sin-tanaka.github.io/index.xml"><img class="icon" src="https://sin-tanaka.github.io/img/rss.svg" alt="rss" /></a>
+        
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    github.io(github-pages)でmaster以外のブランチをホストしたい
+
+</div>
+
+                    <div class="initials"><a href="https://sin-tanaka.github.io/">ad</a></div>
+                </div>
+<nav>
+    <div>Categories: <a href="https://sin-tanaka.github.io/categories/tech/">tech</a></div>
+    <div>Tags: <a href="https://sin-tanaka.github.io/tags/hugo/">#hugo</a> <a href="https://sin-tanaka.github.io/tags/github.io/">#github.io</a> <a href="https://sin-tanaka.github.io/tags/github-pages/">#github-pages</a></div>
+</nav>
+                <div class="meta">
+                    
+                    <div class="date" title='Thu Oct 26 2017 09:38:37 JST'>Oct 26, 2017</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>3 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                
+
+<h1 id="本ブログの構成">本ブログの構成</h1>
+
+<p>本ブログは Golang 製の <code>hugo</code> という静的サイトジェネレータで生成しています。</p>
+
+<p>生成した静的ファイルは github.io(github-pages) でホストしています。</p>
+
+<h2 id="問題点">問題点</h2>
+
+<p>github.io は github の提供している機能の一つで、リポジトリ一つに対し、ドキュメントなどの静的ファイルを配信できるサービスです。
+これが中々便利で、フロントサイドのJavascriptフレームワークで静的コンテンツを作成したときにはここで配信しています。</p>
+
+<p>一方、 github.io の本来の目的は、作成したプロダクトのドキュメントを配信するためのサービスになっているので、配信方法が限られています。</p>
+
+<p>具体的に言うと、</p>
+
+<ul>
+<li>/docs以下</li>
+<li>gh-pagesブランチ</li>
+<li>masterブランチ</li>
+</ul>
+
+<p>のいずれかをルートとする配信方法に限られています。</p>
+
+<p>また、中でも ユーザ名.github.io という名前でリポジトリを生成すると、そのリポジトリはプロダクトという扱いではなく、github ユーザのプロフィールページという扱い（つまりgithub.ioはプロダクトのドキュメント用として使えない）になるので、配信方法が <code>master ブランチをルートとする</code> 以外使えなくなってしまいます。</p>
+
+<p>hugo では、基本的には対象のディレクトリで <code>hugo</code> というコマンドを叩くことで、指定のディレクトリに静的ファイルを生成します。
+これを github.io で配信するには、master ブランチで指定のディレクトリに <code>.</code> を指定することで一旦は解決するでしょう。
+しかし、生成用のディレクトリ群があるルートに、配信用ディレクトリに展開する予定だった静的ファイルが混在することになるので、運用上の見た目が悪いです。
+おそらく、static , css , imgというディレクトリが同じディレクトリに混在することになるので「は？？？」ってなります。
+WEB強者に足払いでもされてしまったらすぐに心がやられてしまうことでしょう。</p>
+
+<pre><code class="language-python">import this
+</code></pre>
+
+<pre><code class="language-bash"># 多分こうなる
+├── archetypes
+├── config.toml
+├── content
+├── public
+├── static
+├── themes
+├── 404.html
+├── about
+├── blog
+├── categories
+├── css
+├── fixed
+├── img
+├── index.html
+├── index.xml
+├── sitemap.xml
+└── tags
+</code></pre>
+
+<p>プロジェクトのルートがこれではいただけません。</p>
+
+<h2 id="git-subtree-コマンドで解決">git-subtree コマンドで解決</h2>
+
+<p>となるとやはり <code>hugo</code> コマンドは指定のディレクトリに展開させてスッキリさせたいです。</p>
+
+<pre><code class="language-bash"># この例では配信用ファイルは public ディレクトリ以下
+# その他は hugo の設定ファイルや記事の実体ファイルなど
+├── archetypes
+├── config.toml
+├── content
+├── public
+├── static
+└── themes
+</code></pre>
+
+<p>これをルートの構成とし、public 以下を github.io で配信したいです。</p>
+
+<p>そこで、本構成を別ブランチで運用し、public 以下のみを master ブランチへ push します。
+具体的には <code>git subtree</code> コマンドを使います。</p>
+
+<pre><code class="language-bash">% git branch develop
+% git checkout develop
+% git push develop
+
+# このタイミングでgithubのリポジトリのセッティングから、
+# メインブランチをmaster → developへ変更し、masterブランチを削除する
+
+# public 以下を master ブランチをpushする
+% git subtree push --prefix public/ origin master
+</code></pre>
+
+<p>こうすることで master ブランチにはpublic以下のみが置かれ、developではpublicを含めた全てのディレクトリが管理されます。</p>
+
+<p>ただ、簡単なブログなのに、デプロイするたびにこんなコマンドを調べて叩くのもかったるいです。
+git add から commit, pushまでの一連の流れを記述したデプロイ用シェルを作っておくと便利です。</p>
+
+<pre><code class="language-sh">#!/bin/bash
+echo &quot;---Now updating...&quot;
+echo &quot;---Build by hugo.&quot;
+hugo &gt;/dev/null
+
+echo &quot;---git add &amp; commit.&quot;
+git add . &gt;/dev/null
+git commit -m &quot;updated on `(date +&quot;%Y/%m/%d&quot;)`&quot; &gt;/dev/null
+
+echo &quot;---git push /public from /public to master.&quot;
+git subtree push --prefix public/ origin master &amp;&gt;/dev/null
+
+echo &quot;Open your GitHub-pages? [Y/n]&quot;
+read ANSWER
+
+case $ANSWER in
+    &quot;&quot; | &quot;Y&quot; | &quot;y&quot; | &quot;yes&quot; | &quot;Yes&quot; | &quot;YES&quot; ) open https://sin-tanaka.github.io/;;
+    * ) echo &quot;---Finish.&quot;;;
+esac
+
+echo &quot;---Finish.&quot;
+</code></pre>
+
+<p>これでなにも気にせずサクサク push できるようになりました。
+ついでに github に草を生やせて一石二鳥です。</p>
+
+<p>と、ここまで書いてみてブラウザで見てみたらコードブロックにシンタックスハイライトが効いてない模様、、</p>
+
+<p>頃合いをみて直すことにします。</p>
+
+                <br>
+		<p><a href="https://sin-tanaka.github.io/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/python.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+</body>
+</html>
+

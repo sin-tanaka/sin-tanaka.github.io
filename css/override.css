@@ -1,0 +1,8 @@
+body, section.main .content {
+  letter-spacing: 0.4px;
+  /*font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Sans", "Open Sans", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
+*/}
+section.header .avatar {
+  border: dashed 2px darkgray;
+  max-width: 145px;
+}

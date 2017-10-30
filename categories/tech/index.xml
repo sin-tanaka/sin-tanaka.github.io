@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on sin-tanaka.github.io</title>
-    <link>https://sin-tanaka.github.io/blog/</link>
-    <description>Recent content in Blog on sin-tanaka.github.io</description>
+    <title>Tech on sin-tanaka.github.io</title>
+    <link>https://sin-tanaka.github.io/categories/tech/</link>
+    <description>Recent content in Tech on sin-tanaka.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 26 Oct 2017 09:38:37 +0900</lastBuildDate>
     
-	<atom:link href="https://sin-tanaka.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sin-tanaka.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://sin-tanaka.github.io/blog/github.iogithub-pages%E3%81%A7master%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E3%83%9B%E3%82%B9%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/</guid>
       <description>本ブログの構成 本ブログは Golang 製の hugo という静的サイトジェネレータで生成しています。 生成した静的ファイルは github.io(github-pages) でホストしています。 問題点 github.io は github の提供</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>https://sin-tanaka.github.io/blog/first-post/</link>
-      <pubDate>Thu, 19 Oct 2017 18:30:48 +0900</pubDate>
-      
-      <guid>https://sin-tanaka.github.io/blog/first-post/</guid>
-      <description>日々技術は進歩する一方です。 我々のような、技術を扱う職業では、進歩に応じて自身も進歩せねばなりません。 その為に必要になるのは、技術に対する理</description>
     </item>
     
   </channel>

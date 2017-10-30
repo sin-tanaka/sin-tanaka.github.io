@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shintaro TANAKA</title>
+    <title>sin-tanaka.github.io</title>
     <link>https://sin-tanaka.github.io/</link>
-    <description>Recent content on Shintaro TANAKA</description>
+    <description>Recent content on sin-tanaka.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Oct 2017 11:25:20 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Oct 2017 09:38:37 +0900</lastBuildDate>
     
 	<atom:link href="https://sin-tanaka.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>2017 10 20 11 25</title>
-      <link>https://sin-tanaka.github.io/blog/2017-10-20-11-25/</link>
-      <pubDate>Fri, 20 Oct 2017 11:25:20 +0900</pubDate>
+      <title>github.io(github-pages)でmaster以外のブランチをホストしたい</title>
+      <link>https://sin-tanaka.github.io/blog/github.iogithub-pages%E3%81%A7master%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E3%83%9B%E3%82%B9%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/</link>
+      <pubDate>Thu, 26 Oct 2017 09:38:37 +0900</pubDate>
       
-      <guid>https://sin-tanaka.github.io/blog/2017-10-20-11-25/</guid>
-      <description></description>
+      <guid>https://sin-tanaka.github.io/blog/github.iogithub-pages%E3%81%A7master%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E3%83%9B%E3%82%B9%E3%83%88%E3%81%97%E3%81%9F%E3%81%84/</guid>
+      <description>本ブログの構成 本ブログは Golang 製の hugo という静的サイトジェネレータで生成しています。 生成した静的ファイルは github.io(github-pages) でホストしています。 問題点 github.io は github の提供</description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://sin-tanaka.github.io/fixed/about/</link>
+      <title></title>
+      <link>https://sin-tanaka.github.io/about/</link>
       <pubDate>Thu, 19 Oct 2017 18:45:58 +0900</pubDate>
       
-      <guid>https://sin-tanaka.github.io/fixed/about/</guid>
-      <description>h1.ダミーテスト I am Web Engineer in Nagano. Japanese / English / C / Python / Django import this // ... code h2.テスト h3.テスト h4.テスト h5.テスト import this</description>
+      <guid>https://sin-tanaka.github.io/about/</guid>
+      <description> About I am Web Engineer.
+Python / Golang / Vue.js
+Portfolio  radipy - cli radiko downloader Vue.js Tutorial - ToDo List - for beginners tutorial. Omikuji Result Site - developed by Vue.js and Realtime Database.  </description>
     </item>
     
     <item>
-      <title>Your New Post</title>
-      <link>https://sin-tanaka.github.io/blog/your-new-post/</link>
+      <title>First Post</title>
+      <link>https://sin-tanaka.github.io/blog/first-post/</link>
       <pubDate>Thu, 19 Oct 2017 18:30:48 +0900</pubDate>
       
-      <guid>https://sin-tanaka.github.io/blog/your-new-post/</guid>
-      <description></description>
+      <guid>https://sin-tanaka.github.io/blog/first-post/</guid>
+      <description>日々技術は進歩する一方です。 我々のような、技術を扱う職業では、進歩に応じて自身も進歩せねばなりません。 その為に必要になるのは、技術に対する理</description>
     </item>
     
   </channel>
